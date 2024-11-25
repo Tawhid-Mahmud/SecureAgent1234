@@ -6,6 +6,7 @@ import {
   smarterContextPatchStrategy,
 } from "./context/review";
 import { GROQ_MODEL, type GroqChatModel } from "./llms/groq";
+import { GROQ_MODEL_LLAMA, type GroqChatModel as GroqChatModelLlama } from "./llms/groq";
 
 const ModelsToTokenLimits: Record<GroqChatModel, number> = {
   "mixtral-8x7b-32768": 32768,
